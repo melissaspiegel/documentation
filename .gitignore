@@ -1,0 +1,14 @@
+node_modules
+vendor
+credentials.json
+.idea
+.DS_Store
+.vscode
+.code-workspace
+.env
+dist
+tests/reports
+tests/phpunit/reports
+.phpunit.cache
+.phpunit.result.cache
+public
