@@ -2,8 +2,8 @@
 
 # Templates
 There are two templates that come with MWM:
-1. **Marketing Web Modules Page Template** - This is our completely modular page template.
-2. **Marketing Web Modules Post Template** - This is our content-focused template using a combination of Gutenberg and ACF.
+1. **Sample Web Modules Page Template** - This is our completely modular page template.
+2. **Sample Web Modules Post Template** - This is our content-focused template using a combination of Gutenberg and ACF.
 
 ## Adding templates
 It should be a rare need to add new templates, but in the case that we need to, it is simple.

@@ -94,12 +94,12 @@ A Partial can have "global" root styles that apply to all views as well as separ
 
 #### Global Root
 
-This stylesheet will always start with the name of the module in `spinal-case` (Ex. MwmCard => `mwm-card`).
+This stylesheet will always start with the name of the module in `spinal-case` (Ex. MwmCard => `swm-card`).
 
 ```scss
 @import "../../../../scss/legacy/global/imports";
 
-.mwm-card {
+.swm-card {
     // your styles here...
 }
 ```
@@ -109,7 +109,7 @@ This stylesheet will always start with the name of the module in `spinal-case` (
 ```scss
 @import "../../../../scss/legacy/global/imports";
 
-.mwm-card {
+.swm-card {
     // your styles here...
 
     @import 'views/default/style';

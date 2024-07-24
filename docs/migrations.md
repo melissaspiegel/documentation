@@ -15,13 +15,13 @@ fields that we use.  The most common scenarios are as follows:
 To run all of your outstanding migrations, execute the wp command:
 
 ```
-wp mwm-migrate up
+wp swm-migrate up
 ```
 
 If you would like to see which migrations have already ran you can use the command:
 
 ```
-wp mwm-migrate list
+wp swm-migrate list
 ```
 
 ## Rolling Back Migrations
@@ -29,7 +29,7 @@ wp mwm-migrate list
 To roll back the latest migration operation, you can use the following command:
 
 ```
-wp mwm-migrate down
+wp swm-migrate down
 ```
  >Note: If the last migration added multiple files, this will roll back each of those files.
 
@@ -37,16 +37,16 @@ You may roll back a limited number of migrations by providing the `step` argumen
 this will roll back the last five migrations regardless of when they ran:
 
 ```
-wp mwm-migrate down --step=5
+wp swm-migrate down --step=5
 ```
 
 ## Creating Migrations
 
-The easiest way to create a new migration is to use our [CLI command](using-mwm-cli.md)
+The easiest way to create a new migration is to use our [CLI command](using-swm-cli.md)
 
 ```php
 npm link
-mwm-cli create migration what-you-are-changing
+swm-cli create migration what-you-are-changing
 ```
 
 > Note: you may need to run 'npm install' in the 'bin/cli' folder for the cli commands to work
@@ -124,7 +124,7 @@ Let's jump into the file, which has been trimmed to only show important bits:
 ```php
 public function up() {
     // Gets all posts that have an MwmCallToAction module added
-    $posts = $wpdb->get_results( "SELECT * FROM `${table_prefix}postmeta` WHERE meta_value LIKE '%mwm_call_to_action%'" );
+    $posts = $wpdb->get_results( "SELECT * FROM `${table_prefix}postmeta` WHERE meta_value LIKE '%swm_call_to_action%'" );
 
     foreach ( $posts as $post ) {
         $modules = unserialize( $post->meta_value );
@@ -132,7 +132,7 @@ public function up() {
             $key_prefix = "rh_mod_page_content_$index";
 
             // Essentially we loop through all the posts above, and then go through each module to see if it is the MwmCallToAction module
-            if ( $module === 'mwm_call_to_action' ) {
+            if ( $module === 'swm_call_to_action' ) {
                 // Update mod_title to module_header
                 // As you may notice $key_prefix is the specific index and parent ACF group
                 // In this case we are really moving the meta_key
@@ -168,11 +168,11 @@ public function up() {
 // An example of the down method, whose goal is to but the data as it was before the up() migration.  Again trimmed to
 // show only important parts.
 public function down() {
-    $posts = $wpdb->get_results( "SELECT * FROM `${table_prefix}postmeta` WHERE meta_value LIKE '%mwm_call_to_action%'" );
+    $posts = $wpdb->get_results( "SELECT * FROM `${table_prefix}postmeta` WHERE meta_value LIKE '%swm_call_to_action%'" );
     foreach ( $posts as $post ) {
         $modules = unserialize( $post->meta_value );
         foreach ( $modules as $index => $module ) {
-            if ( $module === 'mwm_call_to_action' ) {
+            if ( $module === 'swm_call_to_action' ) {
                 $key_prefix = "rh_mod_page_content_$index";
 
                 // Update Meta Keys going from the 'new' fields back to the 'old' fields
@@ -195,18 +195,18 @@ public function down() {
 In another example, we can use an SQL Update statement to do a simple find and replace.  In these cases you do not need to loop through posts or data, and can
 simply run the SQL statement.
 
-In this example we are changing the module name from 'mwm_content_columns' to 'mwm_card_grid'.
+In this example we are changing the module name from 'swm_content_columns' to 'swm_card_grid'.
 
 ```php
 public function up() {
     global $wpdb;
  
-    // Replace all instances of "mwm_content_columns" with "mwm_card_grid"
+    // Replace all instances of "swm_content_columns" with "swm_card_grid"
     $wpdb->query(
         "UPDATE IGNORE $wpdb->postmeta
-        SET meta_value = REPLACE(meta_value, 's:19:\"mwm_content_columns', 's:13:\"mwm_card_grid')
+        SET meta_value = REPLACE(meta_value, 's:19:\"swm_content_columns', 's:13:\"swm_card_grid')
         WHERE meta_key = 'rh_mod_page_content'
-            AND meta_value LIKE '%s:19:\"mwm\_content\_columns%'"
+            AND meta_value LIKE '%s:19:\"swm\_content\_columns%'"
     );
 }
 ```

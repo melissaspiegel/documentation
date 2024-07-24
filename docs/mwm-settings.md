@@ -34,9 +34,9 @@ To use a network setting within the code, it's best to check whether you're on a
 Example:
 ```php
 if ( is_multisite() ) {
-  $post_types = get_site_option( 'mwm_search_index' );
+  $post_types = get_site_option( 'swm_search_index' );
 } else {
-  $post_types = get_option( 'mwm_search_index' );
+  $post_types = get_option( 'swm_search_index' );
 }
 ```
 

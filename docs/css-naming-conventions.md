@@ -20,7 +20,7 @@ Refer to the following diagram to get a better idea of the naming flow. In this 
 
 ## Namespace
 
-The namespace should always be relevant to the project. In this case the namespace will always be `mwm`.
+The namespace should always be relevant to the project. In this case the namespace will always be `swm`.
 
 ## Partial
 

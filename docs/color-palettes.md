@@ -98,20 +98,20 @@ $token-dark-defaults: (
 
 This config would result in an output like this:
 ```scss
-.selector.mwm-palette-10 {
-    --mwm--palette-color-secondary: #fff;
-    --mwm--text-color-primary: #fff;
-    --mwm--text-color-secondary: #fff;
-    --mwm--text-color-tertiary: #fff;
-    --mwm--focus-primary-color: #fff;
+.selector.swm-palette-10 {
+    --swm--palette-color-secondary: #fff;
+    --swm--text-color-primary: #fff;
+    --swm--text-color-secondary: #fff;
+    --swm--text-color-tertiary: #fff;
+    --swm--focus-primary-color: #fff;
 }
 
-.selector.mwm-palette-10 .palette-layer {
-    --mwm--palette-color-secondary: initial;
-    --mwm--text-color-primary: initial;
-    --mwm--text-color-secondary: initial;
-    --mwm--text-color-tertiary: initial;
-    --mwm--focus-primary-color: #fff; // This is #fff instead of initial because of the configuration map
+.selector.swm-palette-10 .palette-layer {
+    --swm--palette-color-secondary: initial;
+    --swm--text-color-primary: initial;
+    --swm--text-color-secondary: initial;
+    --swm--text-color-tertiary: initial;
+    --swm--focus-primary-color: #fff; // This is #fff instead of initial because of the configuration map
 }
 ```
 
@@ -127,15 +127,15 @@ To use the `default-dark-palette` mixin, simply include it in your module (Ex. `
 
 Example output:
 ```scss
-.selector.mwm-palette-10 {
-    --mwm--text-color-primary: #fff;
-    --mwm--text-color-secondary: #fff;
-    --mwm--text-color-tertiary: #fff;
-    --mwm--link-color: #fff;
-    --mwm--link-hover-color: #fff;
-    --mwm--link-active-color: #fff;
-    --mwm--field-background-color: #fff;
-    --mwm--field-border-color: #fff;
+.selector.swm-palette-10 {
+    --swm--text-color-primary: #fff;
+    --swm--text-color-secondary: #fff;
+    --swm--text-color-tertiary: #fff;
+    --swm--link-color: #fff;
+    --swm--link-hover-color: #fff;
+    --swm--link-active-color: #fff;
+    --swm--field-background-color: #fff;
+    --swm--field-border-color: #fff;
 }
 ```
 
@@ -147,15 +147,15 @@ For this reason, we need to set all the tokens back to their initial values so t
 
 Example output:
 ```scss
-.selector.mwm-palette-10 .palette-layer {
-  --mwm--text-color-primary: initial;
-  --mwm--text-color-secondary: initial;
-  --mwm--text-color-tertiary: initial;
-  --mwm--link-color: initial;
-  --mwm--link-hover-color: initial;
-  --mwm--link-active-color: initial;
-  --mwm--field-background-color: initial;
-  --mwm--field-border-color: initial;
+.selector.swm-palette-10 .palette-layer {
+  --swm--text-color-primary: initial;
+  --swm--text-color-secondary: initial;
+  --swm--text-color-tertiary: initial;
+  --swm--link-color: initial;
+  --swm--link-hover-color: initial;
+  --swm--link-active-color: initial;
+  --swm--field-background-color: initial;
+  --swm--field-border-color: initial;
 }
 ```
 

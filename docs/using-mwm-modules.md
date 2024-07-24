@@ -8,7 +8,7 @@ The modules behave like a wrapper for our partials so they work within FlexibleC
 
 ## Creating Modules
 
-To create modules use our `mwm-cli` command. See [using-mwm-cli.md](/docs/using-mwm-cli.md) for details.
+To create modules use our `swm-cli` command. See [using-swm-cli.md](/docs/using-swm-cli.md) for details.
 
 ## File Structure
 
@@ -43,7 +43,7 @@ This method is responsible for adding the main partial ACF fields to the Flexibl
 ```php
 //...
 public function get_acf() {
-    self::$layout = Layout::make( 'Article Grid Module', 'mwm_article_grid' )
+    self::$layout = Layout::make( 'Article Grid Module', 'swm_article_grid' )
         ->layout( 'block' )
         ->fields( Partial::make() );
 
@@ -65,7 +65,7 @@ public function get_data() {
     $data = parent::get_data();
 
     // Example: how to modify data for module
-    $data['variation'] = $data['mwm_mod_view'];
+    $data['variation'] = $data['swm_mod_view'];
     
     return $data;
 }
@@ -78,9 +78,9 @@ Modules will only have a single default view and is responsible for creating the
 ```php
 <div
 id="<?php echo esc_attr( $mod_id ); ?>"
-class="mwm-mod mwm-article-grid <?php echo esc_attr( $mod_classes ); ?>" data-tn-component="<?php echo esc_attr( $tn_component ); ?>">
-    <div class="mwm-mod__container">
-        <div class="mwm-mod__content">
+class="swm-mod swm-article-grid <?php echo esc_attr( $mod_classes ); ?>" data-tn-component="<?php echo esc_attr( $tn_component ); ?>">
+    <div class="swm-mod__container">
+        <div class="swm-mod__content">
             <?php $partial->render( $variation ); ?>
         </div>
     </div>

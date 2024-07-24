@@ -13,7 +13,7 @@ Partials can be an:
 
 ## Creating Partials
 
-To create partials use our `mwm-cli` command. See [using-mwm-cli.md](using-mwm-cli.md) for details.
+To create partials use our `swm-cli` command. See [using-swm-cli.md](using-swm-cli.md) for details.
 
 ## File Structure
 
@@ -109,7 +109,7 @@ If a partial needs more organization for the ACF fields layout, the fields can b
 // Separate Options Tab ACF Fields
 public static function options_tab() {
     $fields = array(
-        Select::make( 'Variation', 'mwm_mod_view' ),
+        Select::make( 'Variation', 'swm_mod_view' ),
         MwmColorPalettes::colorPicker()
             ->defaultValue( 'w-2' )
     );
@@ -208,11 +208,11 @@ public function set_data( $data ) {
 
 All partials will have a `default` view and have the ability to include additional views (as needed). These views will have access to the partial `model()` where the properties are accessible with variables. 
 
-> **Note**: all views must be created at the start when using the `mwm-cli create partial` command. Any views to be added afterwards will need to follow our [naming conventions](file-naming-conventions.md) for the view filename.
+> **Note**: all views must be created at the start when using the `swm-cli create partial` command. Any views to be added afterwards will need to follow our [naming conventions](file-naming-conventions.md) for the view filename.
 
 ```php
 <div
-    class="mwm-card mwm-card--default <?php echo esc_attr( $classes ); ?>"
+    class="swm-card swm-card--default <?php echo esc_attr( $classes ); ?>"
     <?php echo wp_kses_post( strip_tags( $attributes ) ); ?>
     data-tn-element="<?php echo esc_attr( $tn_element ); ?>"
 >
@@ -226,7 +226,7 @@ Each partial is responsible for rendering the view for itself and needs to check
 File: `Includes/Partials/MwmEyebrow/MwmEyebrow.php`
 ```php
 <?php if ( ! empty( $module_eyebrow ) ) : ?>
-	<<?php echo esc_attr( $heading_level ); ?> class="mwm-eyebrow <?php echo esc_attr( $classes ); ?>"><?php echo wp_kses_post( $module_eyebrow ); ?></<?php echo esc_attr( $heading_level ); ?>>
+	<<?php echo esc_attr( $heading_level ); ?> class="swm-eyebrow <?php echo esc_attr( $classes ); ?>"><?php echo wp_kses_post( $module_eyebrow ); ?></<?php echo esc_attr( $heading_level ); ?>>
 <?php endif; ?>
 ```
 
@@ -340,10 +340,10 @@ File: `Includes/Partials/MwmHero/views/default/view.php`
 
 To give a user the ability to select a color palette, you can use the `colorPicker()` method from the `MwmColorPalettes` class. Color palettes are a collection of four colors that can be used on an Mwm Module, these colors are defined in the `/scss/global/theme_aurora/_colors.scss` file and created as css variables in the `@mixin make-color-palette-utility-classes`:
 
-- --mwm-theme--color-background // Background: The main background color.
-- --mwm-theme--color-accent     // Accent: Color used for primary highlights.
-- --mwm-theme--color-secondary  // Dark accent: A darker shade, sometimes used for alternate background elements (e.g. background text).
-- --mwm-theme--color-tertiary   // Light accent: A lighter shade, sometimes used for background accents (e.g. background circles).
+- --swm-theme--color-background // Background: The main background color.
+- --swm-theme--color-accent     // Accent: Color used for primary highlights.
+- --swm-theme--color-secondary  // Dark accent: A darker shade, sometimes used for alternate background elements (e.g. background text).
+- --swm-theme--color-tertiary   // Light accent: A lighter shade, sometimes used for background accents (e.g. background circles).
 
 ```php
 public static function get_acf_fields() {

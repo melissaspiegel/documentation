@@ -1,17 +1,17 @@
 # MwmChart Module
-`MwmChart` is a JavaScript module for creating and managing Chart.js charts. It dynamically initializes charts from elements with the class `mwm-chart` and handles resizing on window resize events.
+`MwmChart` is a JavaScript module for creating and managing Chart.js charts. It dynamically initializes charts from elements with the class `swm-chart` and handles resizing on window resize events.
 
 ## Installation
 To use the `MwmChart` module, you need to have [Chart.js](https://www.chartjs.org/) installed.
 
 
 ## Usage
-To use the `MwmChart` module, you need to include the `mwm-chart.js` file in your project. You can then create a new instance of the `MwmChart` class and pass in the chart configuration options.
+To use the `MwmChart` module, you need to include the `swm-chart.js` file in your project. You can then create a new instance of the `MwmChart` class and pass in the chart configuration options.
 
 ## HTML Structure
 
 ```html
-<div id="chart-1" class="mwm-chart">
+<div id="chart-1" class="swm-chart">
   <canvas></canvas>
   <canvas></canvas>
 </div>
@@ -20,7 +20,7 @@ To use the `MwmChart` module, you need to include the `mwm-chart.js` file in you
 ## JavaScript
 
 ```javascript
-import MwmChart from './mwm-chart.js';
+import MwmChart from './swm-chart.js';
 ```
 
 ## Chart Data

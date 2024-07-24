@@ -2,9 +2,9 @@
 
 **A modular template system for building marketing pages at Sample.**
 
-The [**Marketing Web Modules Page Template**](/docs/templates.md) is entirely comprised of Advanced Custom Fields Flexible Content layouts, which allow us to build in a modular, componentized way. By adding, removing, or adapting modules, our marketing team can build any number of page designs with greatly reduced developer support.
+The [**Sample Web Modules Page Template**](/docs/templates.md) is entirely comprised of Advanced Custom Fields Flexible Content layouts, which allow us to build in a modular, componentized way. By adding, removing, or adapting modules, our marketing team can build any number of page designs with greatly reduced developer support.
 
-MWM provides a framework for easy **"plug-and-play" development** of modules. See detailed instructions for creating new modules and partials [using the MWM CLI](/docs/using-mwm-cli.md) for more information.
+MWM provides a framework for easy **"plug-and-play" development** of modules. See detailed instructions for creating new modules and partials [using the MWM CLI](/docs/using-swm-cli.md) for more information.
 
 ## Contents
 
@@ -15,13 +15,13 @@ MWM provides a framework for easy **"plug-and-play" development** of modules. Se
 * [Code Standards](docs/code-standards.md)
 * [Naming conventions](docs/file-naming-conventions.md)
 * [Templates](docs/templates.md)
-* [MWM Settings](docs/mwm-settings.md)
+* [MWM Settings](docs/swm-settings.md)
 * [Scripts and Styles](docs/scripts-and-styles.md)
 * [Themes](docs/themes.md)
 * [Color Palettes](docs/color-palettes.md)
-* [Creating New Modules/Partials](docs/using-mwm-cli.md)
-* [Using MWM Modules](docs/using-mwm-modules.md)
-* [Using MWM Partials](docs/using-mwm-partials.md)
+* [Creating New Modules/Partials](docs/using-swm-cli.md)
+* [Using MWM Modules](docs/using-swm-modules.md)
+* [Using MWM Partials](docs/using-swm-partials.md)
 * [Gated Content - Module](docs/gated-content-partial.md)
 * [Gated Content - Article](docs/gated-content-article.md)
 * [Migrations](docs/migrations.md)  
@@ -59,7 +59,7 @@ npm run dev
 | --- | ---  |
 | origin/`development` | This is our primary working branch. All work should be based and branched off from here. |
 | origin/`staging` | This is our staging branch. All feature branches should be merged into `staging` before `development` |
-| origin/`jira/[ldap]/[jira-ticket]` | Feature branch format. Pull Requests made to `origin/development` |
+| origin/`jira/[user_id]/[jira-ticket]` | Feature branch format. Pull Requests made to `origin/development` |
 
 **Note**: You should <u>**NOT**</u> be creating feature branches from `staging`. All feature branches should be brached off of `development`.
 
@@ -115,7 +115,7 @@ To deploy to Staging follow the below example.
 ```bash
 git checkout staging
 git pull
-git merge jira/ldap/WORDPRESS-#### 
+git merge jira/user_id/WORDPRESS-#### 
 git push
 ```
 
@@ -132,7 +132,7 @@ First, merge the current `development` branch into your feature branch.
 ```bash
 git checkout development
 git pull
-git checkout jira/ldap/WORDPRESS-####
+git checkout jira/user_id/WORDPRESS-####
 git merge development
 git push
 ```
@@ -141,7 +141,7 @@ Then, merge your feature branch into `development` to trigger the deployment.
 
 ```bash
 git checkout development
-git merge jira/ldap/WORDPRESS-#### 
+git merge jira/user_id/WORDPRESS-#### 
 npm run bump-prod
 git commit -am "bump to v[version number]"
 git push

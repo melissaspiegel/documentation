@@ -33,5 +33,5 @@ Deploy to <Site Name>:
 
 1. Visit: https://code.corp.sample.com/wpdev/marketing-web-modules/-/pipelines
 2. You should see something similar to the below:
-![Gitlab Pipeline Image](images/mwm-gitlab-ci.png)
+![Gitlab Pipeline Image](images/swm-gitlab-ci.png)
     

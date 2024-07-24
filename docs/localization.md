@@ -10,7 +10,7 @@ On all sites that use MWM, we use Advanced Custom Fields to edit and update our 
 
 We do not use `.po` files to translate our content, in order to avoid the need for development support. Instead, we rely on the WordPress CMS to provide translated content, which is submitted by a team of translators.
 
-Further, in some cases localization can include omitting sections of content, [changing site configurations](mwm-settings.md) or changing images. These are all things that can be updated via ACF per locale.
+Further, in some cases localization can include omitting sections of content, [changing site configurations](swm-settings.md) or changing images. These are all things that can be updated via ACF per locale.
 
 ## Omitting content
 

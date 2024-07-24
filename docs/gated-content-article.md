@@ -33,7 +33,7 @@ the JS File: `Includes/Partials/MwmMarketoForm/MarketoForm.js`.
 >Should another form frameworks be added, we should also dispatch the same event so that it can be listened by the 
 > Article Template, or any other partial that may need it.
 
-Currently, the Event Listener is only on the Article Page in the file `js/mwmGatedPostContent.js`.  In this file we 
+Currently, the Event Listener is only on the Article Page in the file `js/swmGatedPostContent.js`.  In this file we 
 listen for the event, and then switch a flag `isSignedUp` to true, and follow the flow to un-hide content or
 open a download link.
 
@@ -41,7 +41,7 @@ open a download link.
 
 ```markdown
 js/
-    mwmGatedPostContent.js           # The javascript file responsible for hiding and showing Article Gated Content
+    swmGatedPostContent.js           # The javascript file responsible for hiding and showing Article Gated Content
 Includes/Partials/MwmMarketoForm/
     MarketoForm.js                   # The javascript file responsible for triggering the Event
 ```

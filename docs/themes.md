@@ -151,7 +151,7 @@ More examples:
 
 ```scss
 // Example 1: Use Sass variables to reference CSS variables
-.mwm-mod {
+.swm-mod {
     background-color: $palette-color-primary;
 }
 
@@ -209,8 +209,8 @@ Example:
 
 ```scss
 $color-button: set-token('color-button', #fff) !default;
-// This will output a CSS variable: --mwm--color-button: #fff
-// Any reference to `$color-button` will output: var(--mwm--color-button, #fff)
+// This will output a CSS variable: --swm--color-button: #fff
+// Any reference to `$color-button` will output: var(--swm--color-button, #fff)
 ```
 
 > Note: Any time you add a new `color` token, make sure to check that against a dark palette and add to the `$token-dark-defaults` configuration map. [Read more about color palettes](color-palettes.md#token-defaults-for-dark-palettes).
@@ -255,7 +255,7 @@ File: utilities/_typography.scss
 @use 'tokens/typography' as type;
 @use 'tokens/colors';
 ...
-/// Example sub heading : Heading partial, mwmHeading class
+/// Example sub heading : Heading partial, swmHeading class
 ///
 /// @param string $breakpoint - Sets the breakpoint on when to use Desktop font size
 @mixin base-sub-heading($breakpoint: 'md') {
@@ -278,12 +278,12 @@ File: utilities/_typography.scss
 ### Implementing Role-Based Utility Mixin
 Once the mixin is set up, you can use it throughout your theme to ensure a consistent look.
 
-For example: To apply the role-based typography to an element with the class ``mwm-heading``
+For example: To apply the role-based typography to an element with the class ``swm-heading``
 
 File: ``partials/MyPartial/scss/theme-mytheme.scss``
 
 ```scss
-  .mwm-heading{
+  .swm-heading{
         @include type-util.base-heading;
     }
 ```

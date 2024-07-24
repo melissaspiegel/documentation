@@ -29,13 +29,13 @@ Below is a table that demonstrates what we actually register depending on the po
 
 | Base Taxonomy | Recruiter Hub Post Type | Non-Recruiter Hub Post Type |
 |---------------|-------------------------|-----------------------------|
-| category      | rh_category             | <post_type>_mwm_category    |
+| category      | rh_category             | <post_type>_swm_category    |
 | topic         | topic                   | <post_type>_topic           |
 | content_type  | content_type            | <post_type>_content_type    |
 | duration      | duration                | <post_type>_duration        |
 | actions       | actions                 | <post_type>_actions         |
 | franchise     | franchise               | <post_type>_fanchise        |
-| author        | mwm_author              | <post_type>_mwm_author      |
+| author        | swm_author              | <post_type>_swm_author      |
 
 
 ## Helper Function
@@ -66,8 +66,8 @@ Notice the use of the `base_taxonomy()` method.  This will tell ACF to run the `
 return the correct taxonomy name based on the post type.  We have two ACF hooks that use this function.  
 
 ```php
-add_filter( 'acf/fields/taxonomy/query', array( $this->RegisterAcf, 'mwm_taxonomy_query' ), 10, 3 );
-add_filter( 'acf/load_field/type=taxonomy', array( $this->RegisterAcf, 'mwm_taxonomy_load_field' ) );
+add_filter( 'acf/fields/taxonomy/query', array( $this->RegisterAcf, 'swm_taxonomy_query' ), 10, 3 );
+add_filter( 'acf/load_field/type=taxonomy', array( $this->RegisterAcf, 'swm_taxonomy_load_field' ) );
 ```
 
 Each of these does the base taxonomy lookup and converts to the proper taxonomy based on post type.

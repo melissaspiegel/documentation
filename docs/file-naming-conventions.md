@@ -45,7 +45,7 @@ Module/Partial folder, class filename, and class name *must* match, be prefixed 
 
 - Examples:
   - Correct: `MwmArticleGrid/MwmArticleGrid.php`
-  - Incorrect: `mwm-article-grid/mwm-article-grid.php`
+  - Incorrect: `swm-article-grid/swm-article-grid.php`
   - Incorrect: `MwmArticleGrid/article_grid.php`
 
 ### Module/Partial ACF
@@ -53,7 +53,7 @@ Module/Partial folder, class filename, and class name *must* match, be prefixed 
 ACF Flex layout name *must* match the class name for the module or partial, but use **snake_case** instead.
 
 - Examples:
-  - Correct: `mwm_article_grid`
+  - Correct: `swm_article_grid`
   - Incorrect: `MwmArticleGrid`
   - Incorrect: `article_grid`
 
@@ -63,7 +63,7 @@ View files should be `default.view.php` in the views folder.
 
 - Examples:
   - Correct: `views/default.view.php`
-  - Incorrect: `views/mwm-article-grid.php`
+  - Incorrect: `views/swm-article-grid.php`
   - Incorrect: `views/MwmArticleGrid.view.php`
 
 ### Partial Assets

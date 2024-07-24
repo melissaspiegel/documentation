@@ -1,8 +1,8 @@
 [MWM](README.md) > Search Index
 
-# Marketing Web Modules Search Index
+# Sample Web Modules Search Index
 
-The Marketing Web Modules can index any MWM Post Type. This creates a json file 
+The Sample Web Modules can index any MWM Post Type. This creates a json file 
 that is uploaded to our S3 Bucket to then be used for our search partial/module.
 
 The search index is generated on a daily schedule via a cron job that runs on
@@ -13,7 +13,7 @@ our WordPress servers.
 There is a network setting that toggles the search index per post type.
 On multisites, look for the "MWM" options page on the Network Admin Dashboard. For single sites, the same options page will be available on the Admin dashboard.
 
-Link: https://sampledev.wpengine.test/wp-admin/network/admin.php?page=mwm-network-options 
+Link: https://sampledev.wpengine.test/wp-admin/network/admin.php?page=swm-network-options 
 
 ## File Structure
 
@@ -54,7 +54,7 @@ define( 'AWS_DISTRIBUTION_ID', '...' );                 // AWS Distribution ID
 ```bash
 > wp cron event list
 ```
-You should see the `mwm_search_index` hook and the next scheduled start time.
+You should see the `swm_search_index` hook and the next scheduled start time.
 
 ## Running
 

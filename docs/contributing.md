@@ -1,11 +1,11 @@
-# Marketing Web Modules
+# Sample Web Modules
 ## Code Contribution Guidelines
 These guidelines exist to help maintain a high level of quality and consistency. Adhering to the guidelines and considerations as much as you can will help make the process of contribution quick and easy.
 
 ### Branch formatting
-Branches should be formatted following the standard set in the [Git Branches](/README.md#git-branches). Mostly, you will follow the jira/`[ldap]/[jira-ticket]` format.
+Branches should be formatted following the standard set in the [Git Branches](/README.md#git-branches). Mostly, you will follow the jira/`[user_id]/[jira-ticket]` format.
 
-- Make sure to follow this format: `jira/ldap/WORDPRESS-XXXX`
+- Make sure to follow this format: `jira/user_id/WORDPRESS-XXXX`
 - Always make sure to branch off of `development`
 - Always make sure to `pull` before creating your branch
 
@@ -13,7 +13,7 @@ Branches should be formatted following the standard set in the [Git Branches](/R
 ```shell
 git checkout development
 git pull
-git checkout -b jira/ldap/WORDPRESS-XXXX
+git checkout -b jira/user_id/WORDPRESS-XXXX
 ```
 
 ### Committing updates

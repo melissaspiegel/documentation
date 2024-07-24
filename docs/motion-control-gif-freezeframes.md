@@ -12,17 +12,17 @@ These features have been created with extensibility in mind, by dispatching cust
 
 ## Freezeframes
 
-**See: [/js/mwmFreezeframes.js](/js/mwmFreezeframes.js)**
+**See: [/js/swmFreezeframes.js](/js/swmFreezeframes.js)**
 
 All gifs on the page will be converted to freezeframes on page load. The motion control bar determines whether that freezeframe will play or pause, depending on user preference.
 
 If a module needs to take control of the freezeframe for any reason, you can do so with the following snippet.
 
 ```js
-console.log( window.mwmFreezeframes.freezeframes );
+console.log( window.swmFreezeframes.freezeframes );
 // Contains all freezeframes generated for this page
 
-window.mwmFreezeframes.getAllGifs();
+window.swmFreezeframes.getAllGifs();
 // Get all gifs on the page
 
 gif.addEventListener( 'ff-ready', callback );
@@ -32,7 +32,7 @@ gif.addEventListener( 'ff-ready', callback );
 Putting it all together, you could listen to each gif and then force the gif to pause once freezeframe is ready.
 
 ```js
-window.mwmFreezeframes.getAllGifs().forEach( ( gif ) => {
+window.swmFreezeframes.getAllGifs().forEach( ( gif ) => {
     gif.addEventListener( 'ff-ready', ( event ) => {
         event.detail.freezeframe.stop();
     } );

@@ -9,7 +9,7 @@ We use the Sample Signals library (formerly Turnstile) to track user interaction
 The signals API expects a few standard attributes to be passed with each tracked event:
 
 1. **section** (optional) - The section or "landmark" of the site, such as "header", "main", "footer" etc. This helps group events.
-2. **component** - The specific component or module that is triggering the event. Typically this is the module itself, such as "mwmFeatured" or "mwmTextMedia".
+2. **component** - The specific component or module that is triggering the event. Typically this is the module itself, such as "swmFeatured" or "swmTextMedia".
 3. **element** - The specific element within the component that triggered the event, such as a button or a card link. This provides more granular context.
 4. **action** - The type of action that occurred. Most often, this will be "click" and is assigned via data-attributes like `data-action-link` or `data-action-click`. See details on **actions** below.
 
@@ -40,7 +40,7 @@ The **section** is typically part of the global page template, so it can be set 
 The **component** attribute should be reserved for the top level of modules. The component name is automatically set by the Module Abstract. To set the component, use the following code snippet as an example:
 
 ```php
-<div class="mwm-my-module" data-tn-component="<?php echo esc_attr( $tn_component ); ?>">
+<div class="swm-my-module" data-tn-component="<?php echo esc_attr( $tn_component ); ?>">
    <!-- some code -->
 <div>
 ```
