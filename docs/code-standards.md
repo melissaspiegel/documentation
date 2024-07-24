@@ -1,4 +1,4 @@
-[MWM](README.md) > Code standards
+[MWM](README.md) > Code Standards
 
 # Code Standards
 
