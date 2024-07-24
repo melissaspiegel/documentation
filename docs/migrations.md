@@ -1,4 +1,4 @@
-[MWM](README.md) > Migrations
+[MWM](/README.md) > Migrations
 
 # Migrations
 

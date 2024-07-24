@@ -1,4 +1,4 @@
-[MWM](README.md) > Code Standards
+[MWM](/README.md) > Code Standards
 
 # Code Standards
 
@@ -13,11 +13,11 @@ We use the standard scss config to enforce consistency across our stylesheets. T
 
 ### VS Code
 
-View code standards for VS Code detailed in this [document](https://wiki.sample.com/display/MKT/Configuring+Visual+Studio+Code+for+MSYS+WebDev+standards)
+View code standards for VS Code detailed in this [document](https://wiki.indeed.com/display/MKT/Configuring+Visual+Studio+Code+for+MSYS+WebDev+standards)
 
 ### PHP Storm
 
-View code standards for PHP Storm detailed in this [document](https://wiki.sample.com/display/MKT/Configuring+PHPStorm+for+MSYS+WebDev+standards)
+View code standards for PHP Storm detailed in this [document](https://wiki.indeed.com/display/MKT/Configuring+PHPStorm+for+MSYS+WebDev+standards)
 
 ### Command Line
 

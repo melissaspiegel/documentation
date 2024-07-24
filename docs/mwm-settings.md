@@ -1,4 +1,4 @@
-[MWM](README.md) > MWM Settings
+[MWM](/README.md) > MWM Settings
 
 # MWM Settings
 

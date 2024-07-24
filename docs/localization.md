@@ -1,4 +1,4 @@
-[MWM](README.md) > Localization
+[MWM](/README.md) > Localization
 
 # MWM Localization
 

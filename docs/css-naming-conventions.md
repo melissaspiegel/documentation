@@ -1,4 +1,4 @@
-[MWM](README.md) > CSS Variable Naming Conventions
+[MWM](/README.md) > CSS Variable Naming Conventions
 
 :warning: **DEPRECATED** This naming convention is no longer recommended. Please refer to the latest [themes](./themes.md) documentation for current best practices.
 

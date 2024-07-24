@@ -1,4 +1,4 @@
-[MWM](README.md) > Motion Control and .gif Freezeframes
+[MWM](/README.md) > Motion Control and .gif Freezeframes
 
 # Motion Control and .gif Freezeframes
 

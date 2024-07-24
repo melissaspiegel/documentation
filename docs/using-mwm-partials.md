@@ -1,4 +1,4 @@
-[MWM](README.md) > Using MWM Partials
+[MWM](/README.md) > Using MWM Partials
 
 # Using MWM Partials
 

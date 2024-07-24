@@ -1,4 +1,4 @@
-[MWM](README.md) > MWM Deployment Pipeline
+[MWM](/README.md) > MWM Deployment Pipeline
 
 # MWM Deployment Pipeline
 

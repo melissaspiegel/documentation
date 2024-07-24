@@ -1,4 +1,4 @@
-[MWM](README.md) > WP PHPUnit Tests
+[MWM](/README.md) > WP PHPUnit Tests
 
 # WP PHPUnit Tests
 

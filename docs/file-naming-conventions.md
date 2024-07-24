@@ -1,4 +1,4 @@
-[MWM](README.md) > File naming conventions
+[MWM](/README.md) > File naming conventions
 
 # File naming conventions
 

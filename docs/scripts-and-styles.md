@@ -1,4 +1,4 @@
-[MWM](README.md) > Scripts and Styles
+[MWM](/README.md) > Scripts and Styles
 
 # Scripts and Styles
 

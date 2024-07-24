@@ -1,4 +1,4 @@
-[MWM](README.md) > Web Modules CLI
+[MWM](/README.md) > Web Modules CLI
 
 # Sample Web Modules CLI
 The Sample Web Modules CLI (`swm-cli`) is the preferred method for creating new modules and partials. Using the CLI Command not only ensures consistency across all our modules, but also is significantly easier to setup.

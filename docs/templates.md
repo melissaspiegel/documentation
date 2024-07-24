@@ -1,4 +1,4 @@
-[MWM](README.md) > Templates
+[MWM](/README.md) > Templates
 
 # Templates
 There are two templates that come with MWM:

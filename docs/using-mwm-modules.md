@@ -1,4 +1,4 @@
-[MWM](README.md) > Using MWM Modules
+[MWM](/README.md) > Using MWM Modules
 
 # Using MWM Modules
 

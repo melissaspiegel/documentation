@@ -1,4 +1,4 @@
-[MWM](README.md) > Taxonomies
+[MWM](/README.md) > Taxonomies
 
 # MWM Taxonomies
 

@@ -1,4 +1,4 @@
-[MWM](README.md) > Gated Content Article
+[MWM](/README.md) > Gated Content Article
 
 # Gated Content Article
 

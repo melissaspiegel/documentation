@@ -1,4 +1,4 @@
-[MWM](README.md) > Search Index
+[MWM](/README.md) > Search Index
 
 # Sample Web Modules Search Index
 
