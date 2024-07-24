@@ -1,0 +1,65 @@
+{
+  "ignoreFiles": [
+    "dist/**/*.css"
+  ],
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-standard-scss"
+  ],
+  "plugins": [
+    "stylelint-selector-bem-pattern"
+  ],
+  "rules": {
+    "at-rule-empty-line-before": null,
+    "at-rule-no-unknown": null,
+    "custom-property-pattern": [
+      "[A-Za-z]{1}[A-Za-z]+(-[A-Za-z]+)?(--[a-z]+)?",
+      {
+        "resolveNestedSelectors": true
+      }
+    ],
+    "declaration-empty-line-before": null,
+    "function-name-case": null,
+    "indentation": 4,
+    "number-max-precision": 5,
+    "plugin/selector-bem-pattern": {
+      "preset": "suit",
+      "presetOptions": {
+        "namespace": "marketing-web-modules"
+      }
+    },
+    "rule-empty-line-before": null,
+    "selector-class-pattern": [
+      "[A-Za-z]{1}[A-Za-z]+(-[A-Za-z]+)?(--[a-z]+)?",
+      {
+        "resolveNestedSelectors": true
+      }
+    ],
+    "selector-list-comma-newline-after": null,
+    "no-duplicate-selectors": [
+      true,
+      {
+        "severity": "warning"
+      }
+    ],
+    "declaration-block-no-shorthand-property-overrides": [
+      true,
+      {
+        "severity": "warning"
+      }
+    ],
+    "no-descending-specificity": [
+      true,
+      {
+        "severity": "warning"
+      }
+    ],
+    "no-invalid-position-at-import-rule": [
+      true,
+      {
+        "severity": "warning"
+      }
+    ],
+    "selector-id-pattern": "[A-Za-z]{1}[A-Za-z]+(-[A-Za-z]+)?(--[a-z]+)?"
+  }
+}
