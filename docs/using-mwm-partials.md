@@ -283,7 +283,7 @@ A partial can contain public functions within the Partial Class that are accessi
 
 #### Example: By the Parent Partial
 
-Scenario: The first heading on a page needs to be an `h1` in order to comply with Indeed Accessibility Guidelines.
+Scenario: The first heading on a page needs to be an `h1` in order to comply with Sample Accessibility Guidelines.
 
 The `MwmModuleHeading` partial needs to control its two child partials (`MwmEyebrow` and `MwmHeading`) and set the correct heading tag depending on whether this heading is a part of the first MWM Module used on a page.
 

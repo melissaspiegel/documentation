@@ -59,7 +59,7 @@ You also have the option of checking the current play/pause state in a couple wa
 
 ### Option 1: Use the Javascript global
 
-`window.indeedReduceMotion` is available for an easy status check.
+`window.sampleReduceMotion` is available for an easy status check.
 
 ### Option 2: Check the motion-control element
 

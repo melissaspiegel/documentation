@@ -33,7 +33,7 @@ By using tokens instead of hardcoded values, we can modify styles globally by si
 
 ### Token values
 
-The values of our tokens may reference existing tokens from Indeed's design system to ensure consistency with other Indeed products. For example: our `color-text-primary` token may reference `colors.neutral.1000 (#2D2D2D)` from IFL in one theme, while it may also reference `colors.neutral.800 (#595959)` in another theme as part of a rebranding effort. The distinction here is that our tokens represent the use of styles within our product rather than defining the actual values themselves.
+The values of our tokens may reference existing tokens from Sample's design system to ensure consistency with other Sample products. For example: our `color-text-primary` token may reference `colors.neutral.1000 (#2D2D2D)` from IFL in one theme, while it may also reference `colors.neutral.800 (#595959)` in another theme as part of a rebranding effort. The distinction here is that our tokens represent the use of styles within our product rather than defining the actual values themselves.
 
 ### Token naming conventions
 

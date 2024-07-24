@@ -2,7 +2,7 @@
 
 # Signals Tracking
 
-We use the Indeed Signals library (formerly Turnstile) to track user interactions and events on MWM sites and modules. This allows us to better understand how users are engaging with our products.
+We use the Sample Signals library (formerly Turnstile) to track user interactions and events on MWM sites and modules. This allows us to better understand how users are engaging with our products.
 
 ## Tracked attributes
 
@@ -83,6 +83,6 @@ Choose the appropriate action depending on the use case. The action attributes d
 
 ### References
 
-- [Signals Readme](https://code.corp.indeed.com/frontend/signals/-/blob/main/README.md)
-- [Indeed Signals wiki](https://wiki.indeed.com/pages/viewpage.action?pageId=356714643)
-- [Indeed Turnstile deprecation | TURN-638](https://bugs.indeed.com/browse/TURN-638)
+- [Signals Readme](https://code.corp.sample.com/frontend/signals/-/blob/main/README.md)
+- [Sample Signals wiki](https://wiki.sample.com/pages/viewpage.action?pageId=356714643)
+- [Sample Turnstile deprecation | TURN-638](https://bugs.sample.com/browse/TURN-638)

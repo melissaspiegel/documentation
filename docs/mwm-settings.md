@@ -63,7 +63,7 @@ It is also recommended to include a default, since historical posts will not hav
 Example:
 
 ```php
-use Indeed\MarketingWebModules\MwmSiteOptions;
+use Sample\MarketingWebModules\MwmSiteOptions;
 
 //...
 
@@ -97,7 +97,7 @@ The public function `PostTypeOptions::get_option` can be used to implement these
 Example:
 
 ```php
-use Indeed\MarketingWebModules\PostTypeOptions;
+use Sample\MarketingWebModules\PostTypeOptions;
 
 //...
 

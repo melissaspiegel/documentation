@@ -22,7 +22,7 @@ Further GatedContent integration can be done to add an overlay, or popup form CT
 This partial works very similarly to other MWM partials, you'll want to do some of the standard procedures:
 
 1. Import the partial with a `use` statement at the top of your module or partial controller:
-    - `use Indeed\MarketingWebModules\Partials\MwmGatedContent\MwmGatedContent;`
+    - `use Sample\MarketingWebModules\Partials\MwmGatedContent\MwmGatedContent;`
 2. Add partial fields to your module or partial ACF:
     - `MwmGatedContent::make()`
     - This comes with two fields:

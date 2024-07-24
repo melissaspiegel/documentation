@@ -10,7 +10,7 @@ When pushing to Staging or Development branches, MWM triggers a Gitlab Pipeline.
 * Deploy Assets to S3
 * Create a Zip Package
 * Deploy plugin to Sites defined in .gitlab-ci.yml
-    * Deployment can either be via IPI (Indeed Plugin Insatller) or SSH
+    * Deployment can either be via IPI (Sample Plugin Insatller) or SSH
     
 ## To add MWM to a new site
 
@@ -31,7 +31,7 @@ Deploy to <Site Name>:
 
 ## Check the status of the Gitlab Pipeline
 
-1. Visit: https://code.corp.indeed.com/wpdev/marketing-web-modules/-/pipelines
+1. Visit: https://code.corp.sample.com/wpdev/marketing-web-modules/-/pipelines
 2. You should see something similar to the below:
 ![Gitlab Pipeline Image](images/mwm-gitlab-ci.png)
     

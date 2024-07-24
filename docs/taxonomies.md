@@ -43,7 +43,7 @@ Below is a table that demonstrates what we actually register depending on the po
 As mentioned we have a helper function to convert to the correct Taxonomy.
 
 ```php
-Indeed\MarketingWebModules\Taxonomies\Taxonomies::get_post_type_taxonomy( $post_type, $base_taxonomy );
+Sample\MarketingWebModules\Taxonomies\Taxonomies::get_post_type_taxonomy( $post_type, $base_taxonomy );
 ```
 
 Where you can pass in the current Post Type, and what the base taxonomy you want to look up.
@@ -55,7 +55,7 @@ we have a custom ACF field named `MwmTaxonomy` to help you build this.
 
 Ex:
 ```php
-use Indeed\MarketingWebModules\Acf\Fields\MwmTaxonomy;
+use Sample\MarketingWebModules\Acf\Fields\MwmTaxonomy;
 ...
 
 MwmTaxonomy::make( 'Choose a Category', 'category' )

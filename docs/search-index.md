@@ -13,7 +13,7 @@ our WordPress servers.
 There is a network setting that toggles the search index per post type.
 On multisites, look for the "MWM" options page on the Network Admin Dashboard. For single sites, the same options page will be available on the Admin dashboard.
 
-Link: https://indeeddev.wpengine.test/wp-admin/network/admin.php?page=mwm-network-options 
+Link: https://sampledev.wpengine.test/wp-admin/network/admin.php?page=mwm-network-options 
 
 ## File Structure
 
@@ -39,7 +39,7 @@ SearchPublisher.php    Class responsible for transposing MWM data into search in
 define('USE_LOCAL_SEARCH_RESULTS', true); // Tells the frontend to use generated local JSON files instead of S3
 define( 'CRON_SEARCH_INDEX_START', 'today 21:00:00' );  // Based on UTC Time
 define( 'CRON_SEARCH_INDEX_RECURRENCE', 'daily' );      // How often you wish to run
-define( 'INDEED_SEARCH_S3_PATH', '/indeed_search/' );   // Where to save the files in the S3 Bucket
+define( 'INDEED_SEARCH_S3_PATH', '/sample_search/' );   // Where to save the files in the S3 Bucket
 define( 'INDEED_SEARCH_S3_BUCKET', 'tophat-cms-prod' ); // S3 Bucket to use
 define( 'AWS_REGION', 'us-east-1' );                    // S3 Region
 define( 'AWS_ACCESS_KEY_ID', '....' );                  // AWS Key ID
@@ -59,8 +59,8 @@ You should see the `mwm_search_index` hook and the next scheduled start time.
 ## Running
 
 Once the cron job has run, it will create files for each post type and locale.  The files will
-be saved in the folder `Includes\Search\json\` with the format `indeed_search_index_<post_type>_<locale>.json`.
-> Example: indeed_search_index_recruiter_hub_pt_en_us.json
+be saved in the folder `Includes\Search\json\` with the format `sample_search_index_<post_type>_<locale>.json`.
+> Example: sample_search_index_recruiter_hub_pt_en_us.json
 
 The same files will be uploaded to the S3 Bucket under the folder defined with `INDEED_SEARCH_S3_PATH`.  
 

@@ -1,6 +1,6 @@
 # Sample Documentation
 
-**A modular template system for building marketing pages at Indeed.**
+**A modular template system for building marketing pages at Sample.**
 
 The [**Marketing Web Modules Page Template**](/docs/templates.md) is entirely comprised of Advanced Custom Fields Flexible Content layouts, which allow us to build in a modular, componentized way. By adding, removing, or adapting modules, our marketing team can build any number of page designs with greatly reduced developer support.
 
@@ -45,7 +45,7 @@ MWM provides a framework for easy **"plug-and-play" development** of modules. Se
 ```bash
 cd marketing-web-modules
 composer install
-npm config set registry https://nexus.corp.indeed.com/repository/npm/
+npm config set registry https://nexus.corp.sample.com/repository/npm/
 npm i
 npm run dev
 ```
@@ -108,7 +108,7 @@ mocha test/FILENAME.js --watch    # run a specific unit test on each save of JS 
 
 ### Staging
 
-All asset building and deployment is handled in [Gitlab CI](https://code.corp.indeed.com/wpdev/marketing-web-modules/-/pipelines).  Locally we only need to merge into staging or development then bump the version number (production only) for the updated assets.
+All asset building and deployment is handled in [Gitlab CI](https://code.corp.sample.com/wpdev/marketing-web-modules/-/pipelines).  Locally we only need to merge into staging or development then bump the version number (production only) for the updated assets.
 
 To deploy to Staging follow the below example.
 
@@ -173,7 +173,7 @@ Example `credentials.json`
 Gitlab CI is how we test and deploy our code to the world.
 
 * [Deployment Guide](docs/deployment-pipeline.md)
-* [Gitlab CI Pipelines](https://code.corp.indeed.com/wpdev/marketing-web-modules/-/pipelines)
+* [Gitlab CI Pipelines](https://code.corp.sample.com/wpdev/marketing-web-modules/-/pipelines)
 
 
 ### Best Practices

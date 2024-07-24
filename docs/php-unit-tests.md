@@ -19,7 +19,7 @@ Use the following commands to setup PHPUnit with the WordPress test library.
 ~/wpdev/wpdev ssh
 
 # Navigate to project root (use whichever site you are testing on)
-# example: cd indeeddev.wpengine.com/wp-content/plugins/marketing-web-modules
+# example: cd sampledev.wpengine.com/wp-content/plugins/marketing-web-modules
 cd [SITE_PATH]/wp-content/plugins/marketing-web-modules
 
 # Run the wp test installation script (MUST include database docker instance)
@@ -56,10 +56,10 @@ svn co https://unit-tests.svn.wordpress.org/trunk ~/wordpress-tests
 #### Workspace Settings (must be set per project)
 ```json
 "phpunit.paths": {
-    "${workspaceFolder}": "/var/www/html/indeedempweb.wpengine.test/wp-content/plugins/marketing-web-modules",
+    "${workspaceFolder}": "/var/www/html/sampleempweb.wpengine.test/wp-content/plugins/marketing-web-modules",
 },
 "phpunit.args": [
-    "--configuration /var/www/html/indeedempweb.wpengine.test/wp-content/plugins/marketing-web-modules/phpunit.xml"
+    "--configuration /var/www/html/sampleempweb.wpengine.test/wp-content/plugins/marketing-web-modules/phpunit.xml"
 ],
 ```
 

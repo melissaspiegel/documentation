@@ -20,7 +20,7 @@ scss/                              # The main styles directory.
             _carousel-controls     
         _buttons                   
         _forms                     
-        _icons                     # Indeed icon styles.
+        _icons                     # Sample icon styles.
         _nav                       # Local nav styles.
     global                         # Directory for all global assets.
         animations/                # Directory for all global animations.

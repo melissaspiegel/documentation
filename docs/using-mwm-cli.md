@@ -5,7 +5,7 @@ The Marketing Web Modules CLI (`mwm-cli`) is the preferred method for creating n
 
 ## Installation
 
-To install `mwm-cli`, run the following from within the [Marketing Web Modules](https://code.corp.indeed.com/wpdev/marketing-web-modules/) project environment.
+To install `mwm-cli`, run the following from within the [Marketing Web Modules](https://code.corp.sample.com/wpdev/marketing-web-modules/) project environment.
 
 ```bash
 > cd marketing-web-modules/bin/cli

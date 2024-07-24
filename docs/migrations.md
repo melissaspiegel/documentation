@@ -69,7 +69,7 @@ Example:
 ```php
 <?php
 
-use Indeed\MarketingWebModules\Abstracts\MwmMigrationAbstract;
+use Sample\MarketingWebModules\Abstracts\MwmMigrationAbstract;
 
 /**
  * Class Example

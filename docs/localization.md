@@ -24,7 +24,7 @@ This ensures optimal flexibility when localizing and editing content.
 
 Some of our sites are multisite environments. In these cases, each site in our multisite represents a locale (language/country), and unique content is provided within each of these sites.
 
-For example, indeeddev is our most popular multisite environment. The same page may exist on both the en-us site and the de-de site on indeeddev, however each will likely have different content catered to their locales.
+For example, sampledev is our most popular multisite environment. The same page may exist on both the en-us site and the de-de site on sampledev, however each will likely have different content catered to their locales.
 
 ## Localization with WPML
 
